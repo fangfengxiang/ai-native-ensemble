@@ -1,5 +1,10 @@
 # 更新记录
 
+## V0.3.1 — 2026-11-03
+
+- 修复 Pages 工作流重跑时报 `Multiple artifacts named "github-pages"` 的问题。
+- artifact 名称加入 workflow run ID 与 run attempt，并在上传和部署步骤使用同一个名称，确保每次重跑只匹配本次 HTML 包。
+
 ## V0.3 — 2026-11-03
 
 - 参考 linklet-admin 的 GitHub Pages 部署工作流，将纯 HTML 原型目录直接上传发布。
