@@ -9,11 +9,12 @@ AI原生协作交付系统。
 - [在线原型演示](https://fangfengxiang.github.io/ai-native-ensemble/)
 - [交互原型 HTML 源码](prototype/index.html)
 - [产品设计与讨论记录](docs/product-design.md)
+- [产品评审与后续规划（建议）](docs/product-review.md)
 - [参考资料](docs/references.md)
 - [演示站点部署说明](docs/deployment.md)
 - [更新记录](CHANGELOG.md)
 
-V0.4 产品讨论原型，六个章节，独立展示业务需求与交付流程、产品岗位流程，以及产品主导轻量交付。没有后端或实际 AI 集成。定位是开发交付平台，测试作为完整交付的一环。
+V0.4.1 产品讨论原型，六个章节，独立展示业务需求与交付流程、产品岗位流程，以及产品主导轻量交付。没有后端或实际 AI 集成。定位是开发交付平台，测试作为完整交付的一环。
 
 ## 本地打开
 
