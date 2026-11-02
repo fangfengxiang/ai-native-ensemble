@@ -1,0 +1,36 @@
+name: Deploy
+
+# main 更新后，将纯 HTML 原型发布到 GitHub Pages。
+# Demo URL: https://fangfengxiang.github.io/ai-native-ensemble/
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: deploy-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-22.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Upload HTML prototype
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: prototype
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

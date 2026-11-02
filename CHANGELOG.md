@@ -1,5 +1,12 @@
 # 更新记录
 
+## V0.3 — 2026-11-03
+
+- 参考 linklet-admin 的 GitHub Pages 部署工作流，将纯 HTML 原型目录直接上传发布。
+- 去掉 Node 安装、构建和复制步骤；main 更新自动部署，也可手动触发。
+- README 增加在线演示入口与部署说明。
+- 采用 GitHub Actions 的 Pages artifact / deploy 工作流：https://github.com/fangfengxiang/linklet-admin/blob/main/.github/workflows/deploy.yml
+
 ## V0.2 — 2026-11-02
 
 - 将既有 V0.1 原型纳入 ai-native-ensemble 仓库，更新 Ensemble 品牌展示。

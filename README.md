@@ -6,23 +6,27 @@ AI原生协作交付系统。
 
 ## 当前交付物
 
-- [交互原型 HTML](prototype/index.html)：五个可切换章节，含需求澄清演示、产品规划交付物和轻量交付分流示例。
-- [产品设计与讨论记录](docs/product-design.md)：已明确方向、设计建议、待确认问题。
-- [参考资料](docs/references.md)：讨论中提供的来源及使用边界。
-- [更新记录](CHANGELOG.md)。
+- [在线原型演示](https://fangfengxiang.github.io/ai-native-ensemble/)
+- [交互原型 HTML 源码](prototype/index.html)
+- [产品设计与讨论记录](docs/product-design.md)
+- [参考资料](docs/references.md)
+- [演示站点部署说明](docs/deployment.md)
+- [更新记录](CHANGELOG.md)
 
 当前为 V0.2 产品讨论原型，无后端或实际 AI 集成。聚焦开发交付平台，测试作为完整交付的一环。
 
-## 打开原型
+## 本地打开
 
-下载仓库后用浏览器直接打开 `prototype/index.html`，不需安装依赖。也可在仓库目录运行：
+直接用浏览器打开 `prototype/index.html`，无需安装依赖。或在仓库目录运行：
 
 ```sh
 python3 -m http.server 8000
 ```
 
-访问 `http://localhost:8000/prototype/`。GitHub 文件页面展示源码，并不是运行中的原型；本次未启用 GitHub Pages。
+访问 `http://localhost:8000/prototype/`。
 
-## 维护方式
+## 发布
 
-原型和文档随产品讨论同步更新至 `main`。保留“已明确 / 建议 / 待确认”状态，不将候选方案写成已达成的决定。研发流程分析等待进一步业务背景。
+GitHub Actions 将 `prototype/` 目录直接发布到 GitHub Pages。每次 main 分支更新后自动部署，Actions 也支持手动运行。无需构建步骤或依赖安装。演示站点是公开的。
+
+原型和产品讨论文档持续更新至 `main`。保留“已明确 / 建议 / 待确认”状态；研发流程分析等待进一步业务背景。
